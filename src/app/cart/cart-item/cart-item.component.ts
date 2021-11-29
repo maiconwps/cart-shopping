@@ -9,9 +9,9 @@ import { ProductItem } from 'src/app/shared/product-item/product-item.model';
   providers: [CartService]
 })
 export class CartItemComponent implements OnInit {
-
   @Input() item: ProductItem | null = null
   @Output() removedItem = new EventEmitter()
+  @Output() changeQuantity = new EventEmitter()
 
   constructor(private cartService: CartService) { }
 
@@ -24,8 +24,12 @@ export class CartItemComponent implements OnInit {
     }
   }
 
-  onChangeInput(inputQuantity: Input){
-    
+
+  onChangeInput(inputQuantity: any){
+    if(this.item !== null){
+      this.item.quantity = inputQuantity.value
+      this.changeQuantity.emit()
+    }
   }
 
 }

@@ -5,8 +5,8 @@
 
 <span class="price">R$ {{item?.product?.price | number: '.2'}}</span>
 
-<input type="number" name="product" [value]="item?.quantity" #inputQuantity >
+<input type="number" min="1" name="product" [value]="item?.quantity" #inputQuantity (change)="onChangeInput(inputQuantity)" >
 
-<span class="total-by-product">$ {{(item !== null? item.quantity * item.product.price : '--') | number: '.2'}}</span>
+<span class="total-by-product">R$ {{(item !== null? item.quantity * item.product.price : '--') | number: '.2'}}</span>
 
 <span class="delete" (click)="onRemove()"><i>X</i></span>

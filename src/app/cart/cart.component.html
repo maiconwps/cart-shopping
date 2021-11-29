@@ -3,7 +3,8 @@
 <form>
     <ul>
         <li *ngFor="let item of cart.items">
-            <app-cart-item [item]="item" (removedItem) = "removeItem($event)"></app-cart-item>
+            <app-cart-item [item]="item" (removedItem) = "removeItem($event)" (changeQuantity) = "calculateTotalValue()"></app-cart-item>
         </li>
     </ul>
+    <span class="total"> <strong>Total: </strong>R$ {{totalValue | number: '.2'}} </span>
 </form>

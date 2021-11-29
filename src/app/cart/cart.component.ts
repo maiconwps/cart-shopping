@@ -11,10 +11,13 @@ import { ProductItem } from '../shared/product-item/product-item.model';
   providers: [CartService]
 })
 export class CartComponent implements OnInit {
+  totalValue: number = 0
+
   cart: Cart
 
   constructor(private cartService: CartService ) {
     this.cart = cartService.getCurrentCart()
+    this.calculateTotalValue()
   }
 
   ngOnInit(): void {
@@ -23,6 +26,10 @@ export class CartComponent implements OnInit {
   removeItem(item: ProductItem){
     this.cartService.removeFromCart(item.id)
     this.cart.items = this.cart.items.filter(productItem => item.id !== productItem.id)
+  }
+
+  calculateTotalValue(){
+    this.totalValue = this.cart.items.reduce((partial, item) => partial + item.quantity*item.product.price, 0)
   }
 
 }

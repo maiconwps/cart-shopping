@@ -44,3 +44,7 @@ input{
     width: 1.8rem;
     text-align: center;
 }
+
+.total-by-product{
+    font-weight: 600;
+}
