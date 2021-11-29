@@ -1,0 +1,12 @@
+<div class="product-details">
+    <img [src]="item?.product?.imageURL" [alt]="item?.product?.name">
+    <a [routerLink]="['/products', item?.product?.id, 'details']"><h2>{{item?.product?.name}}</h2></a>
+</div>
+
+<span class="price">R$ {{item?.product?.price | number: '.2'}}</span>
+
+<input type="number" name="product" [value]="item?.quantity" #inputQuantity >
+
+<span class="total-by-product">$ {{(item !== null? item.quantity * item.product.price : '--') | number: '.2'}}</span>
+
+<span class="delete" (click)="onRemove()"><i>X</i></span>

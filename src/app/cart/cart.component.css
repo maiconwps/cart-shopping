@@ -1,0 +1,9 @@
+:host{
+    box-sizing: border-box;
+    width: 900px;
+    margin: 0 auto;
+}
+
+h2{
+    margin: 1rem;
+}

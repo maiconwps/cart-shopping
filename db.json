@@ -1,0 +1,41 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Harry Potter e a Pedra Filosofal",
+            "author": "J. K. Rowling",
+            "evaluation": 4.8,
+            "price": 52.80,
+            "imageURL": "/assets/images/harry-potter-e-a-pedra-filosofal.webp"
+      
+          },
+
+          {
+            "id": 2,
+            "name": "As Crônicas de Narnina - Volume Único",
+            "author": "C. S. Lewis",
+            "evaluation": 4.9,
+            "price": 89.70,
+            "imageURL": "/assets/images/as-cronicas-de-narnia-1.jpg"
+      
+          },
+          {
+            "id": 3,
+            "name": "Código Limpo - Habilidades Práticas do Agile Software",
+            "author": "Robert C. Martion",
+            "evaluation": 4.7,
+            "price": 53.40,
+            "imageURL": "/assets/images/codigo-limpo.jpg"
+      
+          },
+          {
+            "id": 4,
+            "name": "Jogos Vorazes",
+            "author": "Suzane Collins",
+            "evaluation": 4.6,
+            "price": 42.50,
+            "imageURL": "/assets/images/jogos-vorazes.jpg"
+      
+          }
+    ]
+  }

@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+html, body, h1, h2, h3, ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+}
+
+.button{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 0.25rem 0.75rem;
+    width: max-content;
+    border: solid 2px rgb(2, 2, 167);
+    border-radius: 1rem;
+    font-weight: 600;
+}

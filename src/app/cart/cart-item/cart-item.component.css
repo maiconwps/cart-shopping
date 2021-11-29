@@ -1,0 +1,46 @@
+:host{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+    box-sizing: border-box;
+}
+
+.product-details{
+    height: 100px;
+    display: flex;
+}
+
+.product-details h2{
+    font-size: 1rem;
+    font-weight: normal;
+
+}
+
+.product-details img{
+    height: 100px;
+    margin-right: 0.75rem;
+}
+
+.price{
+    font-size: 1.2rem;
+}
+
+.delete{
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete i{
+    font-style: normal;
+}
+
+input{
+    width: 1.8rem;
+    text-align: center;
+}

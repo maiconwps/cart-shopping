@@ -1,0 +1,23 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.cart{
+    align-self: flex-end;
+    display: block;
+}
+
+.nav-link.home{
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: block;
+    height: 100%;
+}
+
+img.cart-icon{
+    height: 2rem;
+}

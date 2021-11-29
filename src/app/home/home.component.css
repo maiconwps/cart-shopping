@@ -1,0 +1,15 @@
+:host{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    width: 800px;
+}
+
+li{
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.049);
+    margin: 0.5rem 0;
+}

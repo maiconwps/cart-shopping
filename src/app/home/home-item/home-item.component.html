@@ -1,0 +1,10 @@
+
+<img [src]="product.imageURL" [alt]="product.name">
+
+<h2>{{product.name}}</h2>
+
+<span class="price">R$ {{product.price | number: '.2'}}</span>
+
+<a class="button" [routerLink]="['/products', product.id, 'details']">Detalhe</a>
+
+

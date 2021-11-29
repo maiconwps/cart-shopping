@@ -1,0 +1,19 @@
+<div class="product-images">
+    <img [src]="product.imageURL" [alt]="product.name">
+</div>
+
+<div class="product-informations">
+    <h2>{{product.name | uppercase}}</h2>
+
+    <div class="evaluation">
+        <ul class="starts">
+            <li *ngFor="let stateStart of getStarts()" class="start" [class]="stateStart"></li>
+        </ul>
+
+        <span>{{product.evaluation}}</span>
+
+    </div>
+
+    <span class="price">R$ {{product.price | number: '.2'}}</span>
+    <button class="button" (click) = "addToCart()">Adicionar ao Carrinho</button>
+</div>
